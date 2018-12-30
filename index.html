@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var para1 = document.createElement("p");
+            para1.innerHTML ="The Document Object Model (DOM) is programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.";
+            para1.setAttribute("id" , "paragraph1");
+            document.body.appendChild(para1);
+
+            document.getElementById("paragraph1").style.color = "purple";
+
+            var para2 = document.createElement("p");
+            para2.innerHTML = "A Web page is a document. This document can be either displayed in the browser window or as the HTML source. But it is the same document in both cases. The Document Object Model (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.";
+            para2.setAttribute("id" , "paragraph2");
+            document.getElementById("paragraph1").appendChild(para2);
+
+            document.getElementById("paragraph2").style.color = "red";
+
+            document.body.style.backgroundColor = "lightgrey";
+       </script>
+    </body>
+</html>
